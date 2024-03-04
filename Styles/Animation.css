@@ -1,0 +1,53 @@
+.animations {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.animationItem {
+  background-color: #70645c;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  border: 1px #70645c solid;
+  overflow: hidden;
+}
+
+.animationItem > div {
+  height: 60%;
+  margin-bottom: 0;
+  background-color: white;
+}
+
+.animationItem > h3 {
+  margin-top: 0;
+}
+
+@media all and (min-width: 250px) and (max-width: 1064px) {
+  .animations {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.footer > div {
+  width: 100%;
+  height: 100%;
+}
+
+.footer > div > img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.LogoBar {
+  width: 100%;
+  height: 106px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+}
+
+.LogoBar > div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogoBar > div:nth-child(3) {
+  gap: 20px;
+}
+
+.LogoBar > div:nth-child(1) > img {
+  width: 25px;
+  height: 25px;
+}
+
+.LogoBar > div:nth-child(2) > .LogoPic {
+  width: 105px;
+  height: 106px;
+}
+
+.LogoBar > div:nth-child(2) > .LogoName {
+  width: 278px;
+  height: 93px;
+}
+
+.LogoBar > div:nth-child(3) > .SearchIcon {
+  width: 37px;
+  height: 37px;
+}
+
+.LogoBar > div:nth-child(3) > .HeartIcon {
+  width: 26.37px;
+  height: 23px;
+}
+
+.LogoBar > div:nth-child(3) > .UserIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.LogoBar > div:nth-child(3) > .CartIcon {
+  width: 26px;
+  height: 26px;
+}
+
+.LogoBar > .sideBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgb(173, 160, 160);
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 15px;
+  display: none;
+  color: white;
+}
+
+.LogoBar > .sideBar > div {
+  width: 100%;
+  height: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.LogoBar > .sideBar > div > .Icons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(252, 248, 248);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.LogoBar > .Hamburger {
+  display: none;
+}
+
+.TagBar {
+  width: 100%;
+  height: 40px;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TagBar > div {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tagName {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  width: 100%;
+}
+
+@media all and (min-width: 721px) and (max-width: 1000px) {
+  .LogoBar > div:nth-child(3) {
+    gap: 5px;
+  }
+
+  .TagBar > div {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 240px) and (max-width: 720px) {
+  .LogoBar > div:nth-child(1) {
+    display: none;
+  }
+
+  .LogoBar > div:nth-child(3) {
+    display: none;
+  }
+
+  .LogoBar > div:nth-child(2) > .LogoPic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .LogoBar > div:nth-child(2) > .LogoName {
+    width: 240px;
+    height: 90px;
+  }
+
+  .LogoBar > .Hamburger {
+    display: block;
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  .TagBar {
+    display: none;
+  }
+}

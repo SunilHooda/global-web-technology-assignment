@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Clean</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital|Amatic+SC|Playfair+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/BannerSlider.css" />
+    <link rel="stylesheet" href="./Styles/Products.css" />
+    <link rel="stylesheet" href="./Styles/Animation.css" />
+  </head>
+  <body>
+    <div class="Navbar">
+      <div class="LogoBar">
+        <div>
+          <img src="./images/Left Header.svg" alt="LocationIcon" />
+        </div>
+        <div>
+          <img src="./images/Logo Dark.svg" alt="LogoDark" class="LogoPic" />
+          <img src="./images/Name Dark.svg" alt="NameDark" class="LogoName" />
+        </div>
+        <div>
+          <img
+            src="./images/NoPath - Copy.svg"
+            alt="SearchIcon"
+            class="SearchIcon"
+          />
+          <img
+            src="./images/Icon feather-heart.svg"
+            alt="HeartIcon"
+            class="HeartIcon"
+          />
+          <img
+            src="./images/NoPath - Copy (11).svg"
+            alt="UserIcon"
+            class="UserIcon"
+          />
+          <img
+            src="./images/NoPath - Copy (10).svg"
+            alt="CartIcon"
+            class="CartIcon"
+          />
+        </div>
+        <div class="sideBar">
+          <div>
+            <div class="closeButton" onclick="hideSidebar()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40"
+                viewBox="0 -960 960 960"
+                width="40"
+                fill="white"
+                cursor="pointer"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </div>
+            <div class="Icons">
+              <img
+                src="./images/NoPath - Copy.svg"
+                alt="SearchIcon"
+                class="SearchIcon"
+              />
+              <img
+                src="./images/Icon feather-heart.svg"
+                alt="HeartIcon"
+                class="HeartIcon"
+              />
+              <img
+                src="./images/NoPath - Copy (11).svg"
+                alt="UserIcon"
+                class="UserIcon"
+              />
+              <img
+                src="./images/NoPath - Copy (10).svg"
+                alt="CartIcon"
+                class="CartIcon"
+              />
+            </div>
+            <p class="tagName">Home</p>
+            <p class="tagName">Face</p>
+            <p class="tagName">Hair</p>
+            <p class="tagName">Body</p>
+            <p class="tagName">Secret's</p>
+            <p class="tagName">Mini's</p>
+            <p class="tagName">Gifting</p>
+            <p class="tagName">Offers</p>
+            <p class="tagName">Testimonials</p>
+            <p class="tagName">Club</p>
+            <p class="tagName">About Us</p>
+          </div>
+        </div>
+        <div class="Hamburger" onclick="showSidebar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="45"
+            viewBox="0 -960 960 960"
+            width="45"
+            cursor="pointer"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="TagBar">
+        <div>
+          <p class="tagName">Home</p>
+          <p class="tagName">Face</p>
+          <p class="tagName">Hair</p>
+          <p class="tagName">Body</p>
+          <p class="tagName">Secret's</p>
+          <p class="tagName">Mini's</p>
+          <p class="tagName">Gifting</p>
+          <p class="tagName">Offers</p>
+          <p class="tagName">Testimonials</p>
+          <p class="tagName">Club</p>
+          <p class="tagName">About Us</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="BannerSlider">
+      <img
+        src="./images/Banner Slide1.png"
+        alt="Slider"
+        onclick="slideImage()"
+      />
+      <img
+        src="./images/Banner Slide2.png"
+        alt="Slider"
+        onclick="slideImage()"
+      />
+      <img
+        src="./images/Banner Slide3.png"
+        alt="Slider"
+        onclick="slideImage()"
+      />
+      <img
+        src="./images/Banner Slide2.png"
+        alt="Slider"
+        onclick="slideImage()"
+      />
+    </div>
+
+    <div class="TimelessSlider">
+      <div class="TimelessSlogan">
+        <h1>We seek the ancient. We seek the timeless.</h1>
+        <h1>We seek the clean way.</h1>
+        <p>
+          Inspired from the ancient our products have a rare potency to enhance
+          beauty because we do custom formulation, curate ingredients, test,
+          manufacture, design packaging all at our very own licensed organic
+          factory.
+        </p>
+      </div>
+      <div class="slider">
+        <div class="slideContainer" onClick="nextSlide()">
+          <div class="slide">
+            <img src="./images/Component 62.svg" alt="slider" />
+          </div>
+          <div class="slide">
+            <img src="./images/Component 64.svg" alt="slider" />
+          </div>
+          <div class="slide">
+            <img src="./images/Component 65.svg" alt="slider" />
+          </div>
+          <div class="slide">
+            <img src="./images/Component 66.svg" alt="slider" />
+          </div>
+          <div class="slide">
+            <img src="./images/Component 67.svg" alt="slider" />
+          </div>
+          <div class="slide">
+            <img src="./images/Component 68.svg" alt="slider" />
+          </div>
+          <div class="slide">
+            <img src="./images/Component 69.svg" alt="slider" />
+          </div>
+          <div class="slide">
+            <img src="./images/Component 70.svg" alt="slider" />
+          </div>
+          <div class="slide">
+            <img src="./images/Component 71.svg" alt="slider" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="color: lightgray" />
+
+    <div class="tagAndProducts">
+      <div class="productTags">
+        <div class="FaceTag active">
+          <img src="./images/Component 14.png" alt="TagPic" />
+          <p>FACE</p>
+        </div>
+        <div class="HairTag">
+          <img src="./images/Component 15.png" alt="TagPic" />
+          <p>HAIR</p>
+        </div>
+        <div class="BodyTag">
+          <img src="./images/Component 16.png" alt="TagPic" />
+          <p>BODY</p>
+        </div>
+      </div>
+
+      <!-- <div class="sliderContainer2">
+        <button class="preBtn">
+          <img src="./images/Icon ionic-ios-arrow-round-back-1.svg" alt="" />
+        </button>
+        <button class="nxtBtn">
+          <img src="./images/Icon ionic-ios-arrow-round-back.svg" alt="" />
+        </button>
+      </div> -->
+      <div class="slider2">
+        <div class="faceProductItems productItems">
+          <div class="item">
+            <img src="./face/Kushuma 35ml Paint.png" alt="" />
+            <h4>Mahodaya Kannauj Rose Organic Lip Butter - Pink</h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹650.00</p>
+          </div>
+
+          <div class="item">
+            <img src="./face/Kumkumadi 35ml Paint.png" alt="" />
+            <h4>
+              Indus Valley Kumkumadi Beauty Concentrate - For All Skin Types
+            </h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹3490.00</p>
+          </div>
+
+          <div class="item">
+            <img src="./face/Morrocan Argan Paint.png" alt="" />
+            <h4>Morrocan Argan Drops Day & Night Repairing Face Cream</h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹950.00</p>
+          </div>
+
+          <div class="item">
+            <img src="./face/Kushuma 35ml Paint.png" alt="" />
+            <h4>Himalayan Kusuma Oil Hydrating Anti-Ageing Vit-C Face Serum</h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹3490.00</p>
+          </div>
+        </div>
+        <div class="hairProductItems">
+          <div class="item">
+            <img src="./ALT/Rare Clay Paint.png" alt="" />
+            <h4>Mahodaya Kannauj Rose Organic Lip Butter - Pink</h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹650.00</p>
+          </div>
+
+          <div class="item">
+            <img src="./ALT/Theobroma Conditioner Paint.png" alt="" />
+            <h4>
+              Indus Valley Kumkumadi Beauty Concentrate - For All Skin Types
+            </h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹3490.00</p>
+          </div>
+
+          <div class="item">
+            <img src="./ALT/Mediterranean Dew Paint.png" alt="" />
+            <h4>Morrocan Argan Drops Day & Night Repairing Face Cream</h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹950.00</p>
+          </div>
+
+          <div class="item">
+            <img src="./ALT/Argan Oil 115 ml Paint.png" alt="" />
+            <h4>Himalayan Kusuma Oil Hydrating Anti-Ageing Vit-C Face Serum</h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹3490.00</p>
+          </div>
+        </div>
+
+        <div class="bodyProductItems">
+          <div class="item">
+            <img src="./ALT/Activated Carbon Paint.png" alt="" />
+            <h4>Mahodaya Kannauj Rose Organic Lip Butter - Pink</h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹650.00</p>
+          </div>
+
+          <div class="item">
+            <img src="./ALT/Java Coconut  Green Tea Paint.png" alt="" />
+            <h4>
+              Indus Valley Kumkumadi Beauty Concentrate - For All Skin Types
+            </h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹3490.00</p>
+          </div>
+
+          <div class="item">
+            <img src="./ALT/African Shea Tree Paint.png" alt="" />
+            <h4>Morrocan Argan Drops Day & Night Repairing Face Cream</h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹950.00</p>
+          </div>
+
+          <div class="item">
+            <img src="./ALT/Malabar Kokum Paint.png" alt="" />
+            <h4>Himalayan Kusuma Oil Hydrating Anti-Ageing Vit-C Face Serum</h4>
+            <img src="./ALT/Group 134.png" alt="" />
+            <p>₹3490.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="color: lightgray; display: block; margin: auto" width="70%" />
+
+    <div class="BestSeller">
+      <h1>Our Best seller</h1>
+      <div class="productItems">
+        <div class="item">
+          <img src="./face/Kushuma 35ml Paint.png" alt="" />
+          <h4>Mahodaya Kannauj Rose Organic Lip Butter - Pink</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹650.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./face/Kumkumadi 35ml Paint.png" alt="" />
+          <h4>
+            Indus Valley Kumkumadi Beauty Concentrate - For All Skin Types
+          </h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹3490.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./face/Morrocan Argan Paint.png" alt="" />
+          <h4>Morrocan Argan Drops Day & Night Repairing Face Cream</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹950.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./face/Kushuma 35ml Paint.png" alt="" />
+          <h4>Himalayan Kusuma Oil Hydrating Anti-Ageing Vit-C Face Serum</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹3490.00</p>
+        </div>
+      </div>
+      <div class="productItems">
+        <div class="item">
+          <img src="./ALT/Rare Clay Paint.png" alt="" />
+          <h4>Mahodaya Kannauj Rose Organic Lip Butter - Pink</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹650.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./ALT/Theobroma Conditioner Paint.png" alt="" />
+          <h4>
+            Indus Valley Kumkumadi Beauty Concentrate - For All Skin Types
+          </h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹3490.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./ALT/Mediterranean Dew Paint.png" alt="" />
+          <h4>Morrocan Argan Drops Day & Night Repairing Face Cream</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹950.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./ALT/Argan Oil 115 ml Paint.png" alt="" />
+          <h4>Himalayan Kusuma Oil Hydrating Anti-Ageing Vit-C Face Serum</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹3490.00</p>
+        </div>
+      </div>
+
+      <div class="productItems">
+        <div class="item">
+          <img src="./ALT/Activated Carbon Paint.png" alt="" />
+          <h4>Mahodaya Kannauj Rose Organic Lip Butter - Pink</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹650.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./ALT/Java Coconut  Green Tea Paint.png" alt="" />
+          <h4>
+            Indus Valley Kumkumadi Beauty Concentrate - For All Skin Types
+          </h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹3490.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./ALT/African Shea Tree Paint.png" alt="" />
+          <h4>Morrocan Argan Drops Day & Night Repairing Face Cream</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹950.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./ALT/Malabar Kokum Paint.png" alt="" />
+          <h4>Himalayan Kusuma Oil Hydrating Anti-Ageing Vit-C Face Serum</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹3490.00</p>
+        </div>
+      </div>
+
+      <div class="productItems">
+        <div class="item">
+          <img src="./face/Kumkumadi 35ml Paint.png" alt="" />
+          <h4>
+            Indus Valley Kumkumadi Beauty Concentrate - For All Skin Types
+          </h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹3490.00</p>
+        </div>
+        <div class="item">
+          <img src="./face/Morrocan Argan Paint.png" alt="" />
+          <h4>Morrocan Argan Drops Day & Night Repairing Face Cream</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹950.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./face/Kushuma 35ml Paint.png" alt="" />
+          <h4>Himalayan Kusuma Oil Hydrating Anti-Ageing Vit-C Face Serum</h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹3490.00</p>
+        </div>
+
+        <div class="item">
+          <img src="./face/Kumkumadi 35ml Paint.png" alt="" />
+          <h4>
+            Indus Valley Kumkumadi Beauty Concentrate - For All Skin Types
+          </h4>
+          <img src="./ALT/Group 134.png" alt="" />
+          <p>₹3490.00</p>
+        </div>
+      </div>
+
+      <button class="viewAllButton" id="all" onclick="viewAllProducts()">
+        View All
+      </button>
+      <button class="viewLessButton" id="less" onclick="viewLessProducts()">
+        View Less
+      </button>
+    </div>
+
+    <hr style="color: lightgray; display: block; margin: auto" width="70%" />
+
+    <div class="customerTestomonial">
+      <h1>customer testimonials</h1>
+
+      <div class="testimonialSlider">
+        <button class="preBtn" onclick="leftSlide()">
+          <img src="./images/Icon ionic-ios-arrow-round-back-1.svg" alt="" />
+        </button>
+
+        <div class="testmonials">
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              Highly recommended organic product because of it's natural
+              ingredients which perfectly suits all lips.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Soumya</p>
+          </div>
+
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              This sunscreen is very good for summer and u can use this winter
+              also i have dry skin and i use this cream its very good for my
+              skin.. and its not sticky.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Murli Krishna</p>
+          </div>
+
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              The frizz reduction and smoothening are fantastic for your cream.
+              Sometimes I blow dry my hair and straighten them, but they look
+              scorched and frizzy. SoI tried your cream. It was really smooth
+              and Less frizzy.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Anusha KV</p>
+          </div>
+
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              Highly recommended organic product because of it's natural
+              ingredients which perfectly suits all lips.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Soumya</p>
+          </div>
+
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              This sunscreen is very good for summer and u can use this winter
+              also i have dry skin and i use this cream its very good for my
+              skin.. and its not sticky.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Murli Krishna</p>
+          </div>
+
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              The frizz reduction and smoothening are fantastic for your cream.
+              Sometimes I blow dry my hair and straighten them, but they look
+              scorched and frizzy. SoI tried your cream. It was really smooth
+              and Less frizzy.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Anusha KV</p>
+          </div>
+
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              Can be used daily and i am loving how its easy to apply people
+              likeme who are not a fan of foundation can for this it gives a
+              really good finish and perfect flawless appearance.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Vani Ravi</p>
+          </div>
+
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              This sunscreen is very good for summer and u can use this winter
+              also i have dry skin and i use this cream its very good for my
+              skin.. and its not sticky.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Murli Krishna</p>
+          </div>
+
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              The frizz reduction and smoothening are fantastic for your cream.
+              Sometimes I blow dry my hair and straighten them, but they look
+              scorched and frizzy. SoI tried your cream. It was really smooth
+              and Less frizzy.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Anusha KV</p>
+          </div>
+
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              Can be used daily and i am loving how its easy to apply people
+              likeme who are not a fan of foundation can for this it gives a
+              really good finish and perfect flawless appearance.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Vani Ravi</p>
+          </div>
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              Highly recommended organic product because of it's natural
+              ingredients which perfectly suits all lips.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Soumya</p>
+          </div>
+
+          <div class="testimonialCard">
+            <img src="./face/Icon awesome-quote-left.png" alt="" />
+
+            <p class="review">
+              This sunscreen is very good for summer and u can use this winter
+              also i have dry skin and i use this cream its very good for my
+              skin.. and its not sticky.
+            </p>
+
+            <img src="./face/4.5 star rating.png" alt="" />
+            <p>Murli Krishna</p>
+          </div>
+        </div>
+
+        <button class="nxtBtn" onclick="rightSlide()">
+          <img src="./images/Icon ionic-ios-arrow-round-back.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <hr style="color: lightgray; display: block; margin: auto" width="70%" />
+
+    <div class="whyTimeless">
+      <h1>Why timeless</h1>
+      <div class="timeslessItems">
+        <div class="timelessCard">
+          <h2 class="heading">The Place Holder</h2>
+          <p class="text">
+            Our products are a re-imagination of treasured ancient beauty
+            rituals for skin, hair, body & beauty. Melding ancient wisdom with
+            science, our organic products soaked with essential vitamins,
+            minerals & botanicals, have a rare potency to enhance your beauty or
+            solve a specific concern. We use certified organic ingredients which
+            make our products totally safe. Free from parabens, silicone,
+            sulphates, pthalates, GMO, with some of our products are vegan while
+            all of them are cruelty free and safe for planet. Gift yourself
+            goodness made the ancient way.
+          </p>
+        </div>
+        <div class="timelessCard">
+          <h2 class="heading">The Forgotten way</h2>
+          <p class="text">
+            Our products are a re-imagination of treasured ancient beauty
+            rituals for skin, hair, body & beauty. Melding ancient wisdom with
+            science, our organic products soaked with essential vitamins,
+            minerals & botanicals, have a rare potency to enhance your beauty or
+            solve a specific concern. We use certified organic ingredients which
+            make our products totally safe. Free from parabens, silicone,
+            sulphates, pthalates, GMO, with some of our products are vegan while
+            all of them are cruelty free and safe for planet. Gift yourself
+            goodness made the ancient way.
+          </p>
+        </div>
+        <div class="timelessCard">
+          <h2 class="heading">Pure from nature fully organic</h2>
+          <p class="text">
+            Our products are a re-imagination of treasured ancient beauty
+            rituals for skin, hair, body & beauty. Melding ancient wisdom with
+            science, our organic products soaked with essential vitamins,
+            minerals & botanicals, have a rare potency to enhance your beauty or
+            solve a specific concern. We use certified organic ingredients which
+            make our products totally safe. Free from parabens, silicone,
+            sulphates, pthalates, GMO, with some of our products are vegan while
+            all of them are cruelty free and safe for planet. Gift yourself
+            goodness made the ancient way.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="animations">
+      <div class="animationItem">
+        <div>
+          <img src="./images/delivery.gif" alt="" />
+        </div>
+        <h3>FREE<br />DELIVERY</h3>
+      </div>
+
+      <div class="animationItem">
+        <div>
+          <img src="./images/compliments.gif" alt="" />
+        </div>
+        <h3>COMPLIMENTARY<br />GIFTS</h3>
+      </div>
+
+      <div class="animationItem">
+        <div><img src="./images/refer.gif" alt="" /></div>
+        <h3>REFER</h3>
+      </div>
+
+      <div class="animationItem">
+        <div><img src="./images/gifts.gif" alt="" /></div>
+        <h3>GREAT<br />REWARDS</h3>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div><img src="./face/Footer Web.png" alt="" /></div>
+    </div>
+  </body>
+</html>
+
+<script src="./Scripts.js"></script>
+<script src="./Scripts/SelfSlider.js"></script>
+<script src="./Scripts/BestSeller.js"></script>
+<script src="./Scripts/Testimonials.js"></script>
